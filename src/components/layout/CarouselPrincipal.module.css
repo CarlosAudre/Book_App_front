@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff4c7;
+  margin-left: 120px;
+  
+  margin-top: -40px;
+  color: #4b3d2f;
+}
+
+.swiper {
+  padding: 1rem 0;
+  width: 90%;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #000000;
+  /* cor das setas */
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+
+.card:hover {
+  transform: translateY(3px);
+  box-shadow: 12px 12px 25px rgba(105, 47, 47, 0.5);
+}
+
+.card img {
+  width: 12rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+
+.livro_info {
+  margin-left: 20px;
+}
+
+.livro_info p {
+  width: 40ch; /* aprox. 40 caracteres visíveis */
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.rating {
+  text-align: right;
+  width: 100%;
+}

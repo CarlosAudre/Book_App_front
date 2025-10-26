@@ -1,0 +1,54 @@
+.container {
+    height: 1000px;
+}
+
+
+.descubra_carousel {
+    margin-top: 80px;
+}
+
+.mid_carousel {
+    width: 60%;
+}
+
+.sub_container {
+    display: flex;
+}
+
+.top_cinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    height: 153vh;
+    margin-left: 40px;
+    background-color: #f6f1d0;
+}
+
+.top_cinco h2 {
+    margin-top: 92px;
+    align-self: center;
+}
+
+.livros{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 45px;
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+.numero {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.top3 {
+    color: #e71616; 
+    font-weight: bold;
+}
+
+.rating{
+    color: rgb(21, 21, 180);
+}

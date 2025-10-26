@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.container_esquerda{
+    display: flex;  
+}
+
+.logo img{
+    height: 150px;
+}
+
+.container form {
+    padding: 30px;
+    margin-right: 500px;
+    margin-top: 10px;
+    position: relative; /* necessário para posicionar as sugestões */
+}
+
+.user_info {
+    padding: 25px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.inputContainer {
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+.sugestoes {
+    position: absolute;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(51, 33%, 92%, 0.4 );
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15); 
+}
+
+.sugestoes li {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.sugestoes li:hover {
+    background-color: #e2dcbf;
+}
+
+

@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    width: 40px;
+}
+
+.nome{
+    margin-top: 15px;
+    margin: 10px;
+}
+
+
+
