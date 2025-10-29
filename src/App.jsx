@@ -7,22 +7,21 @@ import BookPage from './components/pages/BookPage'
 import ExplorePage from './components/pages/ExplorePage'
 import SavedBooks from './components/pages/SavedBooks'
 import Config from './components/pages/Config'
+
 function App(){
   return(
-    <Router>
+    <Router basename="/Book_App_front">
         <Routes>
-            <Route element={<MainLayout/>}> {/*Esse é o molde que ficará a maior parte das pg, com a sidebar e topbar  */}
+            <Route element={<MainLayout/>}> 
                 <Route path='/' element={<Home/>}/>
-                <Route path='/book' element={<BookPage/>}/>
+                <Route path='/book/:id' element={<BookPage/>}/>
                 <Route path='/explore' element={<ExplorePage/>}/>
                 <Route path='/saved_books' element={<SavedBooks/>}/>
                 <Route path='/config' element={<Config/>}/>
-                
             </Route>
 
             <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Cadastro/>}/>
-            
         </Routes>
     </Router>
   )

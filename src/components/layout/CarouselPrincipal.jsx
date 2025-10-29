@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import styles from "./CarouselPrincipal.module.css";
+import { Link } from "react-router-dom";
 
 function CarouselLivros({ livros }) {
   return (
@@ -18,13 +19,13 @@ function CarouselLivros({ livros }) {
       >
         {livros.map((livro, index) => ( //Cada livro
           <SwiperSlide key={index} className={styles.slide}>
-            <div className={styles.card}>
+            <Link to={`/book/${livro.id}`} className={styles.card}>
               <img
                 src={livro.imageUrl || "https://via.placeholder.com/120x160"}
                 alt={livro.title}
                 className={styles.image}
               /> 
-            </div>
+            </Link>
 
             <div className={styles.livro_info}>
                 <h1>{livro.title}</h1>

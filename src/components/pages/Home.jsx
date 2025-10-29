@@ -3,8 +3,9 @@ import mockBooks from "../../mocks/mock"
 import CarouselLivros from "../layout/CarouselPrincipal"
 import CarouselBooksHome from "../layout/CarouselBooksHome"
 
-function Home() {
 
+
+function Home() {
     const top5 = [...mockBooks]
         .sort((a, b) => b.rating - a.rating)
         .slice(0, 5)

@@ -1,7 +1,6 @@
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import styles from "./Sidebar.module.css";
-
 
 
 import home from "../../assets/images/home.png"
@@ -27,12 +26,18 @@ function IconLink({ to, alt, defaultImg, selectedImg }) {
 }
 
 function Sidebar() {
+  const navigate = useNavigate()
+
+  function goHome() {
+    navigate("/")
+  }
+
   return (
     <aside className={styles.container} aria-label="Sidebar principal">
 
       <div className={styles.top}>
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" onClick={goHome} />
         </div>
       </div>
 
