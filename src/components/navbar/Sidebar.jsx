@@ -41,11 +41,11 @@ function Sidebar() {
           {({ isActive }) => <img src={isActive ? homeSel : home} alt="Home" className={styles.icon} />}
         </NavLink>
 
-        <NavLink to="/explorar" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+        <NavLink to="/explore" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
           {({ isActive }) => <img src={isActive ? bookSel : book} alt="Explorar" className={styles.icon} />}
         </NavLink>
 
-        <NavLink to="/salvos" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+        <NavLink to="/saved_books" className={({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
           {({ isActive }) => <img src={isActive ? saveSel : save} alt="Salvos" className={styles.icon} />}
         </NavLink>
 
