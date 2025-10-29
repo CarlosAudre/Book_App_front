@@ -36,10 +36,10 @@ function Topbar({ usuario }) {
 
     return (
         <nav className={styles.container}>
-            <div className={styles.container_esquerda}>
-                <div className={styles.logo}>
+           <div className={styles.container_esquerda}>
+                 {/*<div className={styles.logo}>
                     <img src={logo} alt="Logo" />
-                </div>
+                </div> */}
                 <form onSubmit={handleSubmit(onSearch)}>
                     <Input
                         registerProps={register("nomeLivro")}
